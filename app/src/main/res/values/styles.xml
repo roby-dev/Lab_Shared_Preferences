@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SP_Lab" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/md_grey_500</item>
+        <item name="colorOnPrimary">@color/md_white_1000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/md_black_1000</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionBarMedium" parent="@android:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBarMedium.Title</item>
+    </style>
+
+
+    <style name="ActionBarMedium.Title">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="ActionBarLarge" parent="@android:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBarLarge.Title</item>
+    </style>
+
+
+    <style name="ActionBarLarge.Title">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="ActionBarSmall" parent="@android:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBarSmall.Title</item>
+    </style>
+
+
+    <style name="ActionBarSmall.Title">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:minHeight="?attr/actionBarSize"
+       android:background="@color/md_grey_700"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id = "@+id/texto_toolbar"
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content"
+               android:textColor="@color/md_white_1000"
+               android:textAppearance="@android:style/TextAppearance.Medium"
+               android:layout_gravity="clip_vertical"
+               android:text=" APLIK S.A.C." />
+       </LinearLayout>
+
+   </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/txtTema"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_700"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text="Elija tema para la aplicación"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_red_700"
+            />
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_blue_700"
+            />
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_green_700"
+            />
+
+        <Button
+            android:id="@+id/btnYellow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_yellow_700"
+            />
+        <Button
+            android:id="@+id/btnAmber"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_amber_700"
+            />
+
+        <Button
+            android:id="@+id/btnPurple"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_purple_700"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBlack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_black_1000"
+            />
+
+        <Button
+            android:id="@+id/btnGrey"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_grey_700"
+            />
+        <Button
+            android:id="@+id/btnBrown"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_brown_700"
+            />
+
+        <Button
+            android:id="@+id/btnCyan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_cyan_700"
+            />
+        <Button
+            android:id="@+id/btnIndigo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_indigo_700"
+            />
+
+        <Button
+            android:id="@+id/btnPink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_pink_700"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/txtFuente"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_700"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text="Escoja tamaño de fuente"/>
+
+    <Spinner
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spAnimals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/tamanio" />
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/btnGuardar"
+        android:background="@color/md_grey_700"
+        android:textColor="@color/md_white_1000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Guardar" />
+
+    <include layout="@layout/spinert_txt"/>
+
+</LinearLayout>
